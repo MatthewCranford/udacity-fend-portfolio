@@ -1,0 +1,42 @@
+/* 
+Mockup colors:
+#02b3e4 blue  
+#2d3c49 dark
+#7d97ad grey 
+*/
+
+/*
+*
+* header
+*
+*/
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border-bottom: 3px solid #2d3c49;
+    padding: 0 0 1rem 0;
+}
+
+    .header__logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .header__title {
+        max-width: 80%;
+    }
+
+        .header__name {
+            margin: 0;
+            text-align: end;
+            font-size: 1.9em;
+        }
+
+        .header__role {
+            margin: 0;
+            text-align: end;
+            font-size: 1.4em;
+        }
