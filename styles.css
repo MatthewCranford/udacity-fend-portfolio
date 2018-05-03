@@ -5,6 +5,16 @@ Mockup colors:
 #7d97ad grey 
 */
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+
+}
+
 /*
 *
 * header
@@ -17,7 +27,7 @@ Mockup colors:
     justify-content: space-between;
     flex-wrap: nowrap;
     border-bottom: 3px solid #2d3c49;
-    padding: 0 0 1rem 0;
+    padding: 1rem 1rem;
 }
 
     .header__logo {
@@ -40,3 +50,29 @@ Mockup colors:
             text-align: end;
             font-size: 1.4em;
         }
+
+
+/*
+*
+* Cover
+*
+*/
+
+.cover {
+    box-shadow: 0px 10px 10px #2d3c49;
+    position: relative;
+    box-sizing: border-box;
+}
+
+    .cover__image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+
+/*
+*
+* Projects
+*
+*/
