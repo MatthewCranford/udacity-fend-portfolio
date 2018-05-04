@@ -186,14 +186,16 @@ body {
 *
 */
 
-/* .about {
-  border-bottom: 2px solid #91acc4;
+.about {
+  /* border-bottom: 2px solid #91acc4; */
   margin: 1rem;
-} */
+  padding: 1rem 0;
+}
 
 .about__heading {
   text-align: center;
   font-size: 2em;
+  margin-bottom: 2rem;
 }
 
 .about__text {
@@ -210,18 +212,30 @@ body {
 *
 */
 
-/* .projects {
-  margin: 2rem 1rem;
+.projects {
+  background-color: #2492c4;
+  color: #fafafa;
 }
 
 .projects__heading {
-  color: #2d3c49;
   text-align: center;
-  font-size: 2rem;
+
+  font-size: 2em;
+  border-bottom: 1px solid #91acc4;
+  margin: 1rem 2rem;
+  padding: 1rem 0;
 }
 
-.projects__project {
+/*
+*
+* Project
+*
+*/
+
+.project {
+  padding: 1rem;
+}
+
+.project__image {
   width: 100%;
-  border: red 1px solid;
-  height: 250px;
-} */
+}
