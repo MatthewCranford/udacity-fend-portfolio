@@ -18,7 +18,7 @@ body {
 
 /*
 *
-* header
+* Header
 *
 */
 
@@ -29,12 +29,6 @@ body {
   position: relative;
   background-color: #fafafa;
 }
-
-/*
-*
-* masthead
-*
-*/
 
 .header {
   display: flex;
@@ -57,7 +51,7 @@ body {
 
 /*
 *
-* drawer
+* Drawer
 *
 */
 
@@ -95,7 +89,7 @@ body {
 
 /*
 *
-* hero
+* Hero
 *
 */
 
@@ -265,4 +259,46 @@ body {
   border-radius: 15px;
   padding: 0.7rem;
   margin: 0.5rem 0.5rem;
+}
+
+/*
+*
+* Contact
+*
+*/
+
+.contact {
+  padding: 1rem 0 0;
+}
+
+.contact__heading {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/*
+*
+* Link Box
+*
+*/
+
+.link-box {
+  height: 200px;
+  width: 100%;
+  background-color: #91acc4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-box__link {
+  padding: 1em;
+  margin: 0 0.75rem;
+  background-color: #2a343b;
+  border-radius: 50%;
+  color: #2492c4;
+}
+
+.link-box__link i::before {
+  font-size: 35px;
 }
