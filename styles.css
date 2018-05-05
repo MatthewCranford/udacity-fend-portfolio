@@ -288,7 +288,7 @@ body {
 *
 */
 
-.link-box {
+.social-links {
   height: 200px;
   width: 100%;
   background-color: #91acc4;
@@ -297,7 +297,7 @@ body {
   align-items: center;
 }
 
-.link-box__link {
+.social-links__link {
   padding: 1em;
   margin: 0 0.75rem;
   background-color: #2a343b;
@@ -306,19 +306,17 @@ body {
   transition: all 0.4s ease;
 }
 
-.link-box__link:hover {
+.social-links__link:hover {
   background-color: #2492c4;
   color: #2a343b;
   transform: scale(1.2);
 }
 
-.link-box__link:active {
-  background-color: #2492c4;
-  color: #2a343b;
+.social-links__link:active {
   filter: brightness(1.2);
 }
 
-.link-box__link i::before {
+.social-links__link i::before {
   font-size: 35px;
 }
 
