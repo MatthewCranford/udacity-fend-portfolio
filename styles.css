@@ -246,10 +246,6 @@ body {
   cursor: pointer;
 }
 
-.project__image-box {
-  width: 100%;
-}
-
 .project__image {
   width: 100%;
 }
@@ -307,6 +303,19 @@ body {
   background-color: #2a343b;
   border-radius: 50%;
   color: #2492c4;
+  transition: all 0.4s ease;
+}
+
+.link-box__link:hover {
+  background-color: #2492c4;
+  color: #2a343b;
+  transform: scale(1.2);
+}
+
+.link-box__link:active {
+  background-color: #2492c4;
+  color: #2a343b;
+  filter: brightness(1.2);
 }
 
 .link-box__link i::before {
