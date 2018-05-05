@@ -1,7 +1,7 @@
 const drawer = document.getElementById('drawer');
-const menu = document.getElementById('menu');
+const hamburger = document.getElementById('hamburger');
 
-menu.addEventListener('click', () => {
+hamburger.addEventListener('click', () => {
   if (drawer.classList.contains('open')) {
     drawer.classList.remove('open');
   } else {

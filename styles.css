@@ -10,10 +10,21 @@ fafafa white
 html,
 body {
   height: 100%;
+  margin: 0;
 }
 
-body {
-  margin: 0;
+/*
+*
+* Header Wrapper
+*
+*/
+
+.header-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #fafafa;
 }
 
 /*
@@ -21,14 +32,6 @@ body {
 * Header
 *
 */
-
-.wrapper {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: #fafafa;
-}
 
 .header {
   display: flex;
@@ -38,15 +41,48 @@ body {
   padding: 0 1rem;
 }
 
+/*
+*
+* Logo
+*
+*/
+
 .logo {
   width: 100px;
   height: 100px;
 }
 
-.menu {
+/*
+*
+* Hamburger
+*
+*/
+
+.hamburger {
   width: 50px;
   height: 50px;
   cursor: pointer;
+}
+
+/*
+*
+* Title
+*
+*/
+
+.title {
+  display: none;
+  text-align: end;
+}
+
+.title__name {
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.title__role {
+  color: #91acc4;
+  margin: 0;
 }
 
 /*
@@ -117,39 +153,6 @@ body {
   margin-left: -100px;
 }
 
-.hero__phone {
-  background-color: #1a1a1a;
-  height: 350px;
-  width: 200px;
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-  border: solid 6.5px #2492c4;
-}
-
-.hero__phone-inner {
-  position: relative;
-  height: 75%;
-  width: 85%;
-  border: solid 2px #2492c4;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero__inner-text {
-  color: #2492c4;
-  font-size: 4rem;
-}
-
 .hero__name {
   margin: 0;
   text-align: end;
@@ -172,6 +175,45 @@ body {
   right: 0;
   margin: 0 2rem 2rem;
   font-size: 2em;
+}
+
+/*
+*
+* Device
+*
+*/
+
+.device {
+  background-color: #1a1a1a;
+  height: 350px;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  border: solid 6.5px #2492c4;
+}
+
+.device__inner {
+  position: relative;
+  height: 75%;
+  width: 85%;
+  border: solid 2px #2492c4;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.device__inner-text {
+  color: #2492c4;
+  font-size: 4rem;
 }
 
 /*
@@ -336,4 +378,67 @@ body {
 
 .footer__text {
   color: #fafafa;
+}
+
+/*
+*
+* Media Queries
+*
+*/
+
+@media only screen and (min-width: 500px) {
+  .hamburger,
+  .hero__name,
+  .hero__role {
+    display: none;
+  }
+
+  .title {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .device {
+    width: 320px;
+    height: 480px;
+  }
+
+  .device__inner {
+    height: 85%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .device {
+    width: 520px;
+    height: 380px;
+  }
+
+  .device::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    background-color: #1a1a1a;
+    bottom: -56.5px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .device::after {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: #1a1a1a;
+    bottom: -86.5px;
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 50%;
+  }
+
+  .device__inner {
+    height: 85%;
+  }
 }
