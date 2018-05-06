@@ -11,6 +11,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  color: #1a1a1a;
 }
 
 /*
@@ -225,21 +226,20 @@ body {
 .about {
   /* border-bottom: 2px solid #91acc4; */
   margin: 1rem;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .about__heading {
   text-align: center;
   font-size: 2em;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .about__text {
   width: 70%;
   text-align: center;
-  margin: auto;
+  margin: 0 auto 1.5rem;
   font-size: 18px;
-  margin-bottom: 1.5rem;
 }
 
 /*
@@ -445,6 +445,10 @@ body {
   .device__inner {
     height: 85%;
   }
+
+  .about__text {
+    width: 45%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -478,5 +482,18 @@ body {
 
   .device__inner {
     height: 85%;
+  }
+
+  .about {
+    padding: 3.5rem;
+  }
+
+  .about__heading {
+    font-size: 3em;
+  }
+
+  .about__text {
+    width: 35%;
+    font-size: 20px;
   }
 }
