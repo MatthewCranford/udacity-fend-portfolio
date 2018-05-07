@@ -175,7 +175,7 @@ body {
   bottom: 0;
   right: 0;
   margin: 0 1.5rem 4.2rem;
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 .hero__arrow {
@@ -604,6 +604,23 @@ body {
 }
 
 @media only screen and (min-width: 1024px) {
+  .header {
+    justify-content: flex-start;
+  }
+
+  .title {
+    text-align: start;
+    margin: 0 0 0 1rem;
+  }
+
+  .title__name {
+    font-size: 2.5em;
+  }
+
+  .title__role {
+    font-size: 1.8em;
+  }
+
   .device {
     width: 520px;
     height: 380px;
