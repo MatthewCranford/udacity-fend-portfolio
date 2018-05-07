@@ -174,8 +174,41 @@ body {
   z-index: 1;
   bottom: 0;
   right: 0;
-  margin: 0 2rem 2rem;
+  margin: 0 1.5rem 4.2rem;
   font-size: 2em;
+}
+
+.hero__arrow {
+  position: absolute;
+  width: 35px;
+  z-index: 1;
+  bottom: 10px;
+  right: 50%;
+  transform: translateX(50%);
+  padding: 5px;
+  cursor: pointer;
+  animation: pulse 4s infinite ease;
+}
+
+@keyframes pulse {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(0.4);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.hero__arrow:hover {
+  filter: brightness(0.8);
+  animation: none;
+}
+
+.hero__arrow:active {
+  filter: brightness(0.6);
 }
 
 /*
@@ -186,12 +219,12 @@ body {
 
 .device {
   background-color: #1a1a1a;
-  height: 350px;
+  height: 325px;
   width: 200px;
   position: absolute;
   z-index: 1;
   left: 50%;
-  top: 50%;
+  top: 48%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
   border: solid 6.5px #2492c4;
