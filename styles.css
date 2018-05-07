@@ -277,6 +277,7 @@ body {
   border-bottom: 1px solid #91acc4;
   margin-bottom: 3rem;
   box-shadow: 0px 3px 25px #1a1a1a;
+  border-bottom: none;
 }
 
 .project__title {
@@ -288,8 +289,29 @@ body {
   cursor: pointer;
 }
 
+.project__image-frame {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.project__image-frame-p1 {
+  background-image: url('images/studybuddiestracker-640.png');
+}
+
+.project__image-frame-p2 {
+  background-image: url('images/pixelartmaker-640.png');
+}
+
+.project__image-frame-p3 {
+  background-image: url('images/animalcard-640.png');
+}
+
 .project__image {
   width: 100%;
+  /* height: 250px; */
 }
 
 .project__info {
@@ -326,7 +348,7 @@ body {
 
 /*
 *
-* Link Box
+* Social Links
 *
 */
 
@@ -436,6 +458,23 @@ body {
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 70%;
+  }
+
+  .project__info {
+    margin: 1rem auto 0;
+    width: 60%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .device {
     width: 320px;
@@ -448,6 +487,34 @@ body {
 
   .about__text {
     width: 45%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .projects__heading {
+    width: 100%;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    width: 30%;
+    flex: 0 0 40%;
+    height: 450px;
+    box-shadow: 10px 10px 15px #1a1a1a70;
+    border-radius: 5px;
+  }
+
+  .project__info {
+    width: 80%;
+    flex: 20%;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -495,5 +562,12 @@ body {
   .about__text {
     width: 35%;
     font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .project {
+    /* width: 30%; */
+    flex: 0 0 27%;
   }
 }
