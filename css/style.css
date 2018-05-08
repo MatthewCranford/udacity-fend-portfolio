@@ -692,6 +692,10 @@ body {
   .hero__device-inner {
     height: 85%;
   }
+
+  .about__text {
+    width: 35%;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
