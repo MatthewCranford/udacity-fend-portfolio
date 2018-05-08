@@ -328,6 +328,7 @@ body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin-bottom: 3rem;
   border-radius: 5px;
   background-color: #fafafa;
@@ -347,6 +348,7 @@ body {
   cursor: pointer;
   width: 70%;
   font-weight: bold;
+  flex: 1 auto;
 }
 
 .project__frame {
@@ -357,6 +359,7 @@ body {
   border: solid 6.5px #2492c4;
   border-radius: 5px;
   box-sizing: border-box;
+  flex: 1 auto;
 }
 
 .project__frame-inner {
@@ -392,13 +395,14 @@ body {
 .project__info {
   color: #1a1a1a;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.1em;
   background-color: #fafafa;
   border-radius: 5px;
   padding: 1rem;
   margin: 1rem auto 0.5rem;
   width: 85%;
   border: 2px solid #91acc4;
+  flex: 1 auto;
 }
 
 /*
@@ -538,6 +542,17 @@ body {
   }
 }
 
+@media only screen and (min-width: 550px) {
+  .project {
+    width: 75%;
+    padding: 1rem 3rem;
+    margin: 0 auto 3rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .projects {
     display: flex;
@@ -546,8 +561,11 @@ body {
   }
 
   .project {
-    width: 75%;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
+  }
+
+  .project__frame {
+    height: 350px;
   }
 
   .project__info {
@@ -570,9 +588,16 @@ body {
     width: 45%;
   }
 
+  .project__frame {
+    height: 400px;
+  }
+
   .contact__text {
     width: 400px;
   }
+}
+
+@media only screen and (min-width: 800px) {
 }
 
 @media only screen and (min-width: 900px) {
@@ -588,11 +613,16 @@ body {
   }
 
   .project {
-    width: 30%;
-    flex: 0 0 40%;
+    flex: 0 0 35%;
     height: 450px;
     box-shadow: 10px 10px 15px #1a1a1a70;
     border-radius: 5px;
+    flex-wrap: nowrap;
+  }
+
+  .project__title {
+    margin: 0 auto;
+    height: 84px;
   }
 
   .project__info {
@@ -600,6 +630,7 @@ body {
     flex: 20%;
     display: flex;
     align-items: center;
+    padding: 2rem 1rem;
   }
 }
 
@@ -670,7 +701,7 @@ body {
 @media only screen and (min-width: 1300px) {
   .project {
     /* width: 30%; */
-    flex: 0 0 27%;
+    flex: 0 0 25%;
   }
 }
 
