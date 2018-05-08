@@ -213,11 +213,11 @@ body {
 
 /*
 *
-* Device
+* hero__device
 *
 */
 
-.device {
+.hero__device {
   background-color: #1a1a1a;
   height: 325px;
   width: 200px;
@@ -230,7 +230,7 @@ body {
   border: solid 6.5px #2492c4;
 }
 
-.device--project {
+.hero__device--project {
   width: 100%;
   position: relative;
   /* display: block; */
@@ -240,7 +240,7 @@ body {
   box-sizing: border-box;
 }
 
-.device__inner {
+.hero__device-inner {
   position: relative;
   height: 75%;
   width: 85%;
@@ -255,7 +255,7 @@ body {
   align-items: center;
 }
 
-.device__inner--project {
+.hero__device-inner--project {
   /* height: 300px; */
   background-position: center;
   background-size: cover;
@@ -264,11 +264,11 @@ body {
   background-image: url('../images/studybuddiestracker-640.png');
 }
 
-.device__inner-svg {
+.hero__device-inner-svg {
   width: 75px;
 }
 
-.device__inner-text {
+.hero__device-inner-text {
   color: #2492c4;
   font-size: 4rem;
 }
@@ -575,12 +575,12 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .device {
+  .hero__device {
     width: 320px;
     height: 480px;
   }
 
-  .device__inner {
+  .hero__device-inner {
     height: 85%;
   }
 
@@ -652,12 +652,12 @@ body {
     font-size: 1.8em;
   }
 
-  .device {
+  .hero__device {
     width: 520px;
     height: 380px;
   }
 
-  .device::before {
+  .hero__device::before {
     content: '';
     position: absolute;
     width: 50px;
@@ -668,7 +668,7 @@ body {
     transform: translateX(50%);
   }
 
-  .device::after {
+  .hero__device::after {
     content: '';
     position: absolute;
     width: 150px;
@@ -680,27 +680,13 @@ body {
     border-radius: 50%;
   }
 
-  .device__inner {
+  .hero__device-inner {
     height: 85%;
-  }
-
-  .about {
-    padding: 3.5rem;
-  }
-
-  .about__heading {
-    font-size: 3em;
-  }
-
-  .about__text {
-    width: 35%;
-    font-size: 20px;
   }
 }
 
 @media only screen and (min-width: 1300px) {
   .project {
-    /* width: 30%; */
     flex: 0 0 25%;
   }
 }
