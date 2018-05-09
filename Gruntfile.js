@@ -8,17 +8,21 @@ module.exports = function(grunt) {
         options: {
           // Task-specific options go here.
           sizes: [
+            // {
+            //   name: '640',
+            //   width: 640
+            // },
+            // {
+            //   name: '768',
+            //   width: 768
+            // },
+            // {
+            //   name: '1024',
+            //   width: 1024
+            // }
             {
-              name: '640',
-              width: 640
-            },
-            {
-              name: '768',
-              width: 768
-            },
-            {
-              name: '1024',
-              width: 1024
+              name: '16',
+              width: 16
             }
           ]
         },
