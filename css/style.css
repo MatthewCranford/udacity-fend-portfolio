@@ -323,9 +323,8 @@ body {
 .project {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 450px;
   padding: 1rem;
-
   margin: 0 0 3rem 0;
   border-radius: 5px;
   background-color: #fafafa;
@@ -333,16 +332,16 @@ body {
 }
 
 .project__title {
-  text-align: center;
-  color: #1a1a1a;
-  background-color: #fafafa;
-  border-radius: 5px;
+  /* background-color: #fafafa; */
   font-size: 1.6em;
   padding: 0.75rem;
   margin: 0 auto 0.5rem;
   width: 70%;
   font-weight: bold;
   flex: 1 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project__title-link {
@@ -362,13 +361,13 @@ body {
 
 .project__frame {
   position: relative;
-  width: 100%;
-  height: 300px;
   background-color: #1a1a1a;
   border: solid 6.5px #2492c4;
   border-radius: 5px;
   box-sizing: border-box;
   flex: 1 80%;
+  width: 95%;
+  margin: auto;
 }
 
 .project__frame-inner {
@@ -563,8 +562,6 @@ body {
   .project {
     padding: 1rem 3rem;
     margin: 0 auto 2rem;
-    display: flex;
-    flex-direction: column;
     box-shadow: 10px 10px 15px #1a1a1a70;
     border-radius: 5px;
     width: 425px;
@@ -585,16 +582,9 @@ body {
     width: 45%;
   }
 
-  .project__frame {
-    height: 400px;
-  }
-
   .contact__text {
     width: 400px;
   }
-}
-
-@media only screen and (min-width: 900px) {
 }
 
 @media only screen and (min-width: 1024px) {
@@ -672,28 +662,10 @@ body {
     transition: transform 0.4s ease;
     transform: scale(1.05);
   }
-
-  .project__title {
-    flex: 1 10%;
-    text-align: center;
-    vertical-align: middle;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-
-  .project__frame {
-    flex: 1 75%;
-    width: 95%;
-    margin: auto;
-  }
 }
 
 @media only screen and (min-width: 1400px) {
   .project {
-    flex: 0 0 auto;
     width: 400px;
   }
 }
