@@ -5,7 +5,7 @@ My colors:
 91acc4 light secondary
 fafafa white
 1a1a1a black
-e6e6e6 gray (body background)
+c5c5c5 gray (body background)
 */
 
 html,
@@ -233,7 +233,6 @@ body {
 .hero__device--project {
   width: 100%;
   position: relative;
-  /* display: block; */
   left: 0;
   top: 0;
   transform: none;
@@ -255,15 +254,6 @@ body {
   align-items: center;
 }
 
-.hero__device-inner--project {
-  /* height: 300px; */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* width: 100%; */
-  background-image: url('../images/studybuddiestracker-640.png');
-}
-
 .hero__device-inner-svg {
   width: 75px;
 }
@@ -280,7 +270,6 @@ body {
 */
 
 .about {
-  /* border-bottom: 2px solid #91acc4; */
   padding: 2rem 0;
   background-color: #fafafa;
 }
@@ -330,11 +319,12 @@ body {
 */
 
 .project {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin-bottom: 3rem;
+  height: 500px;
+  padding: 1rem;
+
+  margin: 0 0 3rem 0;
   border-radius: 5px;
   background-color: #fafafa;
   box-shadow: 0px 3px 25px #1a1a1a;
@@ -350,7 +340,7 @@ body {
   margin: 0 auto 0.5rem;
   width: 70%;
   font-weight: bold;
-  flex: 1 auto;
+  flex: 1 10%;
 }
 
 .project__title-link {
@@ -376,7 +366,7 @@ body {
   border: solid 6.5px #2492c4;
   border-radius: 5px;
   box-sizing: border-box;
-  flex: 1 auto;
+  flex: 1 80%;
 }
 
 .project__frame-inner {
@@ -412,9 +402,11 @@ body {
   border-radius: 5px;
   padding: 1rem;
   margin: 1rem auto 0.5rem;
-  width: 85%;
+  width: 80%;
   border: 2px solid #91acc4;
-  flex: 1 auto;
+  flex: 1 20%;
+  display: flex;
+  align-items: center;
 }
 
 /*
@@ -567,21 +559,8 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
-  }
-}
-
-@media only screen and (min-width: 600px) {
-  .project {
-    padding: 1rem 2rem;
-  }
-
-  .project__frame {
-    height: 350px;
-  }
-
-  .project__info {
-    margin: 1rem auto 0;
-    width: 60%;
+    box-shadow: 10px 10px 15px #1a1a1a70;
+    border-radius: 5px;
   }
 }
 
@@ -608,9 +587,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 800px) {
-}
-
 @media only screen and (min-width: 900px) {
   .projects__heading {
     width: 400px;
@@ -625,24 +601,34 @@ body {
   }
 
   .project {
-    flex: 0 0 35%;
+    flex: 0 0 41%;
     height: 450px;
-    box-shadow: 10px 10px 15px #1a1a1a70;
-    border-radius: 5px;
-    flex-wrap: nowrap;
+    padding: 1rem 0.5rem;
   }
 
   .project__title {
+    flex: 1 10%;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    height: 84px;
+    padding: 1rem;
+  }
+
+  .project__frame {
+    flex: 1 75%;
+    width: 95%;
+    margin: auto;
   }
 
   .project__info {
     width: 80%;
-    flex: 20%;
+    flex: 1 20%;
     display: flex;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -703,7 +689,7 @@ body {
 
 @media only screen and (min-width: 1300px) {
   .project {
-    flex: 0 0 25%;
+    flex: 0 0 29%;
   }
 }
 
