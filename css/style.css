@@ -406,9 +406,9 @@ body {
   margin: 1rem auto 0.5rem;
   width: 80%;
   border: 2px solid #91acc4;
-  flex: 1 20%;
+  flex: 1 15%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 /*
@@ -559,16 +559,15 @@ body {
   }
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 600px) {
   .project {
-    width: 75%;
     padding: 1rem 3rem;
-    margin: 0 auto 3rem;
-    /* height: auto; */
+    margin: 0 auto 2rem;
     display: flex;
     flex-direction: column;
     box-shadow: 10px 10px 15px #1a1a1a70;
     border-radius: 5px;
+    width: 425px;
   }
 }
 
@@ -596,53 +595,6 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
-  .projects__heading {
-    width: 400px;
-    margin: 1rem auto 4rem;
-  }
-
-  .projects__box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .project {
-    flex: 0 0 41%;
-    height: 450px;
-    padding: 1rem 0.5rem;
-  }
-
-  .project:hover {
-    transition: transform 0.4s ease;
-    transform: scale(1.1);
-  }
-
-  .project__title {
-    flex: 1 10%;
-    text-align: center;
-    vertical-align: middle;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-
-  .project__frame {
-    flex: 1 75%;
-    width: 95%;
-    margin: auto;
-  }
-
-  .project__info {
-    width: 80%;
-    flex: 1 20%;
-    display: flex;
-    align-items: center;
-    padding: 1rem 1rem;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -698,11 +650,51 @@ body {
   .about__text {
     width: 35%;
   }
+
+  .projects__heading {
+    width: 400px;
+    margin: 1rem auto 4rem;
+  }
+
+  .projects__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    padding: 1rem 0.5rem;
+    margin: 0 1rem 4rem;
+  }
+
+  .project:hover {
+    transition: transform 0.4s ease;
+    transform: scale(1.05);
+  }
+
+  .project__title {
+    flex: 1 10%;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .project__frame {
+    flex: 1 75%;
+    width: 95%;
+    margin: auto;
+  }
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1400px) {
   .project {
-    flex: 0 0 29%;
+    flex: 0 0 auto;
+    width: 400px;
   }
 }
 
