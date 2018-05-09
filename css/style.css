@@ -44,6 +44,7 @@ body {
   align-items: center;
   padding: 0 1rem;
   flex-wrap: wrap;
+  height: 100px;
 }
 
 /*
@@ -53,8 +54,8 @@ body {
 */
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
 }
 
 /*
@@ -611,6 +612,11 @@ body {
     flex: 0 0 41%;
     height: 450px;
     padding: 1rem 0.5rem;
+  }
+
+  .project:hover {
+    transition: transform 0.4s ease;
+    transform: scale(1.1);
   }
 
   .project__title {
