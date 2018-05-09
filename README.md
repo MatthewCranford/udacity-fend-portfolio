@@ -1,5 +1,7 @@
 # My Portfolio
 
+Personal portfolio designed for Project 1 of the Front-End Nanodegree
+
 ## images used
 
 * Udacity Logo: https://worldvectorlogo.com/logo/udacity
