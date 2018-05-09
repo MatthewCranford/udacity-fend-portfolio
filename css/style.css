@@ -556,7 +556,7 @@ body {
     width: 75%;
     padding: 1rem 3rem;
     margin: 0 auto 3rem;
-    height: auto;
+    /* height: auto; */
     display: flex;
     flex-direction: column;
     box-shadow: 10px 10px 15px #1a1a1a70;
