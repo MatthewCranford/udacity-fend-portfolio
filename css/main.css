@@ -164,7 +164,7 @@ body {
   position: absolute;
   z-index: 1;
   margin: 2rem 0 0 1rem;
-  font-size: 2.2em;
+  font-size: 2em;
 }
 
 .hero__role {
@@ -221,8 +221,8 @@ body {
 
 .hero__device {
   background-color: #1a1a1a;
-  height: 325px;
-  width: 200px;
+  height: 265px;
+  width: 170px;
   position: absolute;
   z-index: 1;
   left: 50%;
@@ -384,15 +384,15 @@ body {
 }
 
 .project__frame-inner--p1 {
-  background-image: url('../images/studybuddiestracker-640.png');
+  background-image: url('images/studybuddiestracker-640.png');
 }
 
 .project__frame-inner--p2 {
-  background-image: url('../images/pixelartmaker-640.png');
+  background-image: url('images/pixelartmaker-640.png');
 }
 
 .project__frame-inner--p3 {
-  background-image: url('../images/animalcard-640.png');
+  background-image: url('images/animalcard-640.png');
 }
 
 .project__info {
