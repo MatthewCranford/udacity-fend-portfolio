@@ -382,15 +382,15 @@ body {
 }
 
 .project__frame-inner--p1 {
-  background-image: url('images/studybuddiestracker-640.png');
+  background-image: url('../images/studybuddiestracker-640.png');
 }
 
 .project__frame-inner--p2 {
-  background-image: url('images/pixelartmaker-640.png');
+  background-image: url('../images/pixelartmaker-640.png');
 }
 
 .project__frame-inner--p3 {
-  background-image: url('images/animalcard-640.png');
+  background-image: url('../images/animalcard-640.png');
 }
 
 .project__info {
