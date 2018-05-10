@@ -1,6 +1,6 @@
 # My Portfolio
 
-Personal portfolio designed for Project 1 of the Front-End Nanodegree
+Personal portfolio designed for Project 1 of the Front-End Nanodegree.
 
 ## images used
 
