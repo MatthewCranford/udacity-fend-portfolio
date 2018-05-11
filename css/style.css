@@ -459,7 +459,7 @@ body {
 .social-links__link-text {
   position: absolute;
   overflow: hidden;
-  left: -1000px;
+  left: -9001px;
 }
 
 .social-links__link:hover {
